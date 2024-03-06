@@ -1,14 +1,14 @@
-UNIQUEID=<your-unique-id>
+UNIQUEID=b0d43b
 
 APPNAME=petclinic
-RESOURCE_GROUP=rg-$APPNAME-$UNIQUEID
+RESOURCE_GROUP=rg-petclinic-b0d43b
 LOCATION=northeurope
 
-SPRING_APPS_SERVICE=sa-$APPNAME-$UNIQUEID
+SPRING_APPS_SERVICE=sa-petclinic-b0d43b
 az config set defaults.group=$RESOURCE_GROUP defaults.spring=$SPRING_APPS_SERVICE
 
-GIT_REPO=<your-gh-config-repo>
-GIT_USERNAME=<your-gh-username>
+GIT_REPO=https://github.com/TCreavin/spring-petclinic-microservices-config
+GIT_USERNAME=TCreavin
 
 API_GATEWAY=api-gateway
 ADMIN_SERVER=admin-server
@@ -25,7 +25,7 @@ VISITS_SERVICE_JAR=spring-petclinic-visits-service/target/spring-petclinic-visit
 
 MYSQL_SERVER_NAME=mysql-$APPNAME-$UNIQUEID
 MYSQL_ADMIN_USERNAME=myadmin
-MYSQL_ADMIN_PASSWORD=<your-admin-pw>
+MYSQL_ADMIN_PASSWORD=Password123
 DATABASE_NAME=petclinic
 
 KEYVAULT_NAME=kv-$APPNAME-$UNIQUEID
